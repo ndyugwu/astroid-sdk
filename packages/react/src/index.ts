@@ -29,13 +29,7 @@ export {
   type UpdateAgentStatusVariables,
   type UpdateAgentMetadataVariables,
 } from './hooks.js';
-export {
-  useWalletBalance,
-  walletBalanceKeys,
-  isStellarPublicKey,
-  type UseWalletBalanceOptions,
-  type UseWalletBalanceResult,
-} from './hooks/useWalletBalance.js';
+
 export {
   snapshotAgentCache,
   rollbackAgentCache,
@@ -130,9 +124,22 @@ export {
 } from './hooks/usePolicyEvaluation.js';
 export { useTransactions, useTransaction, useCreateTransaction } from './hooks/use-transactions.js';
 export {
+  useWalletBalance,
+  walletBalanceKeys,
+  isStellarPublicKey,
+  type UseWalletBalanceOptions,
+  type UseWalletBalanceResult,
+} from './hooks/use-wallet-balance.js';
+export {
   useAgentList,
   type UseAgentListParams,
   type UseAgentListOptions,
   type UseAgentListResult,
   type AgentListPageParam,
 } from './hooks/useAgentList.js';
+export {
+  useAgentAnalytics,
+  agentAnalyticsKeys,
+  type UseAgentAnalyticsOptions,
+  type AgentAnalyticsData,
+} from './hooks/useAgentAnalytics.js';
